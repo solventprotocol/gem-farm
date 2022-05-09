@@ -14,7 +14,7 @@ pub struct VariableRateConfig {
     pub duration_sec: u64,
 }
 
-#[proc_macros::assert_size(72)]
+// #[proc_macros::assert_size(72)]
 #[repr(C)]
 #[derive(Debug, Copy, Clone, AnchorSerialize, AnchorDeserialize)]
 pub struct VariableRateReward {

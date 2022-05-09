@@ -30,7 +30,7 @@ pub struct MaxCounts {
     pub max_rarity_points: u32,
 }
 
-#[proc_macros::assert_size(1000)] // + 5 to make it /8
+// #[proc_macros::assert_size(1000)] // + 5 to make it /8
 #[repr(C)]
 #[account]
 #[derive(Debug)]
@@ -434,7 +434,7 @@ impl TimeTracker {
     }
 }
 
-#[proc_macros::assert_size(352)] // +4  to make it /8
+// #[proc_macros::assert_size(352)] // +4  to make it /8
 #[repr(C)]
 #[derive(Debug, Copy, Clone, AnchorSerialize, AnchorDeserialize)]
 pub struct FarmReward {

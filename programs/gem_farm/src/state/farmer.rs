@@ -12,7 +12,7 @@ pub enum FarmerState {
     PendingCooldown,
 }
 
-#[proc_macros::assert_size(600)] // +4 to make it /8
+// #[proc_macros::assert_size(600)] // +4 to make it /8
 #[repr(C)]
 #[account]
 #[derive(Debug)]
@@ -124,7 +124,7 @@ impl Farmer {
 
 // --------------------------------------- farmer reward
 
-#[proc_macros::assert_size(216)]
+// #[proc_macros::assert_size(216)]
 #[repr(C)]
 #[derive(Debug, Copy, Clone, AnchorSerialize, AnchorDeserialize)]
 pub struct FarmerReward {
